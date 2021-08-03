@@ -1,0 +1,513 @@
+   /*--------------------Header---------------------*/
+   * {
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+   ::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #ebebeb;
+    display: block;
+    margin: 0 auto;
+}
+
+.Head {
+    margin: 2%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+.LOGO {
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    border: 1px solid #0BF0FF;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+.P {
+    text-align: center;
+    font-family: 'Moul', cursive;
+    font-size: 27px;
+}
+
+.P1 {
+    text-align: center;
+    font-family: 'Moul', cursive;
+    font-size: 18px;
+}
+
+/*------------------Navbar--------------------*/
+.Navbar {
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 17px 30px;
+    text-decoration: none;
+}
+
+.menu-bar ul {
+    font-family: 'Rye', cursive;
+    list-style: none;
+    color: #fff;
+}
+
+.Navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* ======================================================== */
+/*--------------Home Bar-----------------*/
+.Home1 {
+    margin: 2%;
+    padding: 13px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+/*-----------------Home---------------*/
+.Home {
+    margin: 2%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+
+.Thank {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Moul', cursive;
+}
+
+.Int {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Moul', cursive;
+}
+
+/*--------------------Artices1---------------*/
+.Articles1 {
+    margin: 2%;
+    padding: 13px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+.Articles {
+    margin: 2%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+.Read {
+    padding: 3%;
+}
+
+.Span {
+    font-size: 15px;
+    font-family: 'Moul', cursive;
+}
+.PP{
+    font-size: 15px;
+}
+/* =======================Slider====================== */
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* 
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} 
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+} */
+
+/* ====================My BTP============= */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    padding: 15px;
+    z-index: 99;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* ===================About Bar================================== */
+.About1 {
+    margin: 2%;
+    padding: 13px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+/* ===================About================================== */
+.moulight {
+    font-family: 'Moul', cursive;
+    font-size: 18px;
+    text-align: center;
+}
+
+.freehand {
+    font-family: 'Freehand', cursive;
+    font-size: 15px;
+}
+
+.blue {
+    color: blue;
+    margin: 0px;
+
+}
+
+.main {
+
+    margin: 2%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+tr {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 5px;
+}
+
+td {
+    width: 20%;
+    padding: 10px;
+}
+
+#Padding {
+    padding: 2%;
+}
+
+#PP {
+    font-family: 'Moul', cursive;
+    font-size: 15px;
+    color: blue;
+}
+
+p {
+    font-family: 'Freehand', cursive;
+    font-size: 13px;
+}
+
+label {
+    font-family: 'Freehand', cursive;
+    font-size: 14px;
+}
+
+.The {
+    color: black;
+    font-size: 15px;
+    font-family: 'Freehand', cursive;
+}
+
+.The1 {
+    color: red;
+    font-size: 13px;
+    font-family: 'Freehand', cursive;
+}
+
+.Submit {
+    position: relative;
+    width: 230px;
+    height: 40px;
+    border: 1px solid rgb(199, 199, 199);
+    font-size: 22px;
+    left: 40%;
+}
+
+.Submit:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+/* ================Form Bar======================== */
+.Form1 {
+    margin: 2%;
+    padding: 13px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+}
+
+/* ================Form Page=============== */
+.Form {
+    margin: 2%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.1);
+
+}
+
+.formstyle h2 {
+    background: #4D4D4D;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    /* font-weight: 100; */
+    padding: 10px 20px;
+
+}
+
+.formstyle input[type="text"],
+.formstyle input[type="email"],
+.formstyle textarea,
+.formstyle select {
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formstyle textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+.form1 {
+    overflow: hidden;
+    padding: 10%;
+    position: relative;
+}
+
+.form1 .read-more {
+    flex-direction: row;
+}
+
+/* =======================BUTTON===================== */
+.read-more button {
+    padding: 10px 15px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+}
+
+.read-more button:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.radio1 {
+    font-size: 18px;
+    font-family: 'STIX Two Math', serif;
+}
+
+.radio2 {
+    position: relative;
+    left: 40px;
+    font-size: 15px;
+    font-family: 'STIX Two Math', serif;
+}
+
+.radio3 {
+    position: relative;
+    left: 70px;
+    font-size: 15px;
+    font-family: 'STIX Two Math', serif;
+}
+
+.radio4 {
+    position: relative;
+    left: 90px;
+    font-size: 15px;
+    font-family: 'STIX Two Math', serif;
+}
+
+/* =========================Footer======================= */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 8px rgba(70, 70, 70, 0.3);
+}
+
+.f-block1,
+.f-block2,
+.f-block3 {
+    width: 30%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    text-align: left;
+    padding: 10px 15px;
+    transition: 0.1s;
+}
+
+.f-block1:hover,
+.f-block2:hover,
+.f-block3:hover {
+    background-color: rgb(240, 240, 240);
+    transform: scale(1.04);
+}
+
+.f-block1 h2,
+.f-block2 h2,
+.f-block3 h2 {
+    color: rgb(90, 90, 90);
+}
+
+.f-block3 h2 {
+    margin: 10px 0 0 0;
+}
+
+.icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 0 5px 0;
+}
+
+.Icons1 {
+    width: 30px;
+    height: 30px;
+}
+
+.icons a:hover {
+    transform: scale(1.2);
+}
+
+.l-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags {
+    background-color: rgb(182, 182, 182);
+    padding: 2px 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.tags:hover {
+    background-color: slategrey;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .f-block1,
+    .f-block2,
+    .f-block3 {
+        width: 100%;
+    }
+}

@@ -12,11 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
     <!-- ==========Link Style================== -->
     <link rel="stylesheet" href="CSS/COVID-19.css">
-
+    
 </head>
 
 <body>
-
     <!-- ========================Header============================= -->
     <div class="Head" id="container" onScroll="myFunction()">
         <h3></h3><br>
@@ -714,23 +713,23 @@
     <div class="Form">
         <div class="formstyle">
             <h2>Hello Users!</h2>
-            <form class="form1">
-                <input type="text" placeholder="Your Name" id=" Name" name=" Name">
-                <input type="text" placeholder="Date of Birthday" id=" Birthday" name=" Birthday ">
-                <input type="email" placeholder="Email" id="Email" name="Email">
-                <input type="text" placeholder="What you do!" ​ id=" Text">
-                <input type="text" placeholder="What are you looking for!" ​ id=" Text">
-                <textarea placeholder="Any message for us?" onkeyup="adjust_textarea(this)"></textarea>
+            <form id="form1">
+                <input type="text" placeholder="ឈ្មោះរបស់អ្នក" id=" Name" name="Name" required>
+                <input type="text" placeholder="ថ្ងៃខែឆ្នាំកំណើត" id=" Birthday" name="Birthday" required>
+                <input type="email" placeholder="អុីម៉ែល" id="Email" name="Email" required>
+                <input type="text" placeholder="មុខរបរសព្វថ្ងៃ" ​ id=" Text" name="job" required>
+                <input type="text" placeholder="លេខទូរស័ព្ទរបស់អ្នក" ​ id=" Text" name="phoneNumber" required>
+                <input type="text" placeholder="សារផ្សេងៗមកកាន់ពួកយើង!" name="message" required>
                 <!-- ==========================Gander=========================== -->
-                <span class="radio1">Gander</span>
-                <input class="radio2" type="radio" id="female" name="gender" value="female">
-                <label class="radio2" for="male">Male</label>
-                <input class="radio3" type="radio" id="female" name="gender" value="female">
-                <label class="radio3" for="female">Female</label>
-                <input class="radio4" type="radio" id="other" name="gender" value="other">
-                <label class="radio4" for="other">Other</label><br><br>
+                <span class="radio1">ភេទ</span>
+                <input class="radio2" type="radio" id="male" name="gender" required value="male">
+                <label class="radio2" for="male">ប្រុស</label>
+                <input class="radio3" type="radio" id="female" name="gender" required value="female">
+                <label class="radio3" for="female">ស្រី</label>
+                <input class="radio4" type="radio" id="other" name="gender" required value="other">
+                <label class="radio4" for="other">ផ្សេងៗ</label><br><br>
                 <div class="read-more">
-                    <button>Send!</button>
+                    <button>ផ្ញើរ</button>
                 </div>
             </form>
         </div>
@@ -740,12 +739,13 @@
         <div class="f-block1">
             <h2>FOLLOW US</h2>
             <div class="icons">
-                <a href="https://www.facebook.com/leanghak.seirey.79"><img class="Icons1" src="./Project Covid-19/I Con/Facebook.svg"
-                        alt="Facebook"></a>
+                <a href="https://www.facebook.com/leanghak.seirey.79"><img class="Icons1"
+                        src="./Project Covid-19/I Con/Facebook.svg" alt="Facebook"></a>
                 <a href="#"><img class="Icons1" src="./Project Covid-19/I Con/Flag.svg" alt="Page"></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox"><img class="Icons1" src="./Project Covid-19/I Con/Gmail.svg"
-                        alt="Gmail"></a>
-                <a href="https://www.youtube.com/"><img class="Icons1" src="./Project Covid-19/I Con/Youtube.svg" alt="Youtube"></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><img class="Icons1"
+                        src="./Project Covid-19/I Con/Gmail.svg" alt="Gmail"></a>
+                <a href="https://www.youtube.com/"><img class="Icons1" src="./Project Covid-19/I Con/Youtube.svg"
+                        alt="Youtube"></a>
             </div><br>
             <h4> ©2021 Portfolio</h4>
         </div>
@@ -777,6 +777,30 @@
 
     <script src="Project Covid-19/JS/COVID-19.js"></script>
 
+     <!-- ===================Email JS================================= -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('user_5tdaB2SUp8xvgGeZZLizQ');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('form1').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('inf_covid19', 'template_096afsr', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                        var inputs = document.getElementsByTagName('input');
+                        for (let i = 0; i < inputs.length; i++) {
+                            inputs[i].value = ""
+                        }
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </body>
 
 </html>
